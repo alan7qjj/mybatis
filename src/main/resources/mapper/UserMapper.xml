@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis_t.po.UserMapper">
+    <select id="Select" parameterType="int" resultType="com.mybatis_t.po.User">
+        SELECT * FROM USER WHERE id =#{id}
+    </select>
+    <insert id="InsertUser" parameterType="com.mybatis_t.po.User">
+       <selectKey keyProperty="" order="AFTER"></selectKey>
+        insert into user
+        (username,birthday,sex,address)
+        values(#{username},#{birthday},#{sex},#{address})
+    </insert>
+</mapper>
