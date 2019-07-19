@@ -20,6 +20,7 @@ public class DemoApplicationTests {
     @Autowired
     private UserMapper userMapper;
     @Test
+<<<<<<< Updated upstream
     public void contextLoads() {
         System.err.println(
                 userMapper.Select(1));
@@ -39,10 +40,25 @@ public class DemoApplicationTests {
     }
    /* @Test
     public void add(){
+=======
+    public void select_1() {
+        System.err.println(userMapper.Select(1));
+    }
+    @Test
+    public void insert_1(){
+>>>>>>> Stashed changes
         User user = new User();
         user.setUsername("小秦");
         user.setAddress("安徽");
         System.err.println(userMapper.InsertUser(user));
+<<<<<<< Updated upstream
     }*/
+=======
+    }
+    @Test
+    public void Delete_1(){
+        System.err.println(userMapper.Delete(101));
+    }
+>>>>>>> Stashed changes
 
 }
