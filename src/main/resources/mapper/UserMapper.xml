@@ -6,16 +6,16 @@
     <select id="Select" parameterType="int" resultType="com.mybatis_t.po.User">
         SELECT * FROM USER WHERE id =#{id}
     </select>
-<<<<<<< Updated upstream
+
     <select id="Select_all" resultType="com.mybatis_t.po.User">
         SELECT  * from user
     </select>
     <select id="Select_id_bySection" parameterType="int" resultType="com.mybatis_t.po.User">
         SELECT id,username from `user` WHERE id BETWEEN #{start} and #{end}
-=======
+
     <select id="Select_all" resultType="">
         select * from user
->>>>>>> Stashed changes
+
     </select>
     <insert id="InsertUser" parameterType="com.mybatis_t.po.User">
        <selectKey keyProperty="" order="AFTER"></selectKey>

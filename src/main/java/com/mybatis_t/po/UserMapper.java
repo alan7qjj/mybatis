@@ -3,7 +3,7 @@ package com.mybatis_t.po;
 import java.util.List;
 
 public interface UserMapper {
-<<<<<<< Updated upstream
+
     //查询 单个查
     User Select(int id);
     //查询 查询所有
@@ -12,13 +12,13 @@ public interface UserMapper {
     List<User> Select_id_bySection(int start,int end);
     //需求 增加用户
     boolean InsertUser(User user);
-=======
+
     public User Select(int id);
     public List<User> Select_all();
     //需求 增加用户
     public boolean InsertUser(User user);
     public boolean Delete(int id);
 
->>>>>>> Stashed changes
+
 
 }
